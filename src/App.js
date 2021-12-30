@@ -4,13 +4,14 @@ import { Typewriter } from 'react-simple-typewriter'
 import ReactPageScroller from "react-page-scroller";
 import github from './github.svg'
 import linkedin from './linkedin.svg'
-import scroll from './scroll.svg'
 import purplePolygon from './purplePolygon.png'
 import whiteCube from './whiteCube.png'
 import blackCube from './blackCube.png'
 import whiteTic from './whiteTic.png'
 import React from 'react'
 import Project from './page/Project'
+import Projects from './Projects.json'
+import Footer from './Footer'
 
 const Header = () => {
   return (
@@ -20,16 +21,6 @@ const Header = () => {
         <a href='#contact'>CONTACT</a>
       </div>
     </header>
-  )
-}
-
-const Footer = () => {
-  return (
-    <footer>
-      <div className='footer'>
-        <img alt='scroll' src={scroll} className='scroll'/>
-      </div>
-    </footer>
   )
 }
 
@@ -52,7 +43,7 @@ function App() {
         <div className='frontPage'>
           <div className='content'>
             <Header/>
-            <Footer/>
+            <Footer height={'50px'}/>
             <div className='container'>
               <div className='ressource'>
                 <div className='presentation'>
@@ -90,7 +81,9 @@ function App() {
             </div>
           </div>
         </div>
-        <Project/>
+        {Projects.data.map(elem => {
+          return (<Project data={elem} key={elem.title}/>)
+        })}
       </ReactPageScroller>
     </div>
   );

@@ -162,12 +162,10 @@ header a:hover::after {
 footer {
   width: 100%;
   position: fixed;
-  bottom: 50px;
 }
 
 .footer {
   display: flex;
-  align-items: center;
   justify-content: center;
   animation: UpDown 2500ms infinite alternate;
 }

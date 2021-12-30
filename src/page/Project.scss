@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&family=Yellowtail&display=swap');
+
+.project {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    .information {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 40%;
+        .title {
+            font-family: Roboto Mono, monospace;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 66px;
+            margin-bottom: 31px;
+        }
+        .description {
+            font-family: Roboto Mono, monospace;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 46px;
+            margin-bottom: 70px;
+            text-align: justify;
+        }
+        .github {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: max-content;
+            border-radius: 10px;
+            padding: 5px;
+            .text {
+                flex-direction: row;
+                align-items: center;
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 35px;
+                line-height: 41px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .inside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 40%;
+    }
+}
+
+.thumbnails {
+    justify-content: center;
+}
