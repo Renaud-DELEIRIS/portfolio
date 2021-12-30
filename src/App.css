@@ -156,7 +156,7 @@ header a:hover::after {
 }
 
 .icon:hover {
-  transform: rotate(360deg);
+  transform: scale(1.2);
 }
 
 footer {

@@ -5,16 +5,39 @@
         "github": "https://freesvg.org/search/",
         "images": [
             {
-                "image": "assets/rpg/photo1.jpg"
+                "image": "/assets/rpg/photo3.png"
             },
             {
-                "image": "assets/rpg/photo2.jpg"
+                "image": "/assets/rpg/photo4.png"
             },
             {
-                "image": "assets/rpg/photo3.png"
+                "image": "/assets/rpg/photo1.jpg"
             },
             {
-                "image": "assets/rpg/photo4.png"
+                "image": "/assets/rpg/photo2.jpg"
+            }
+        ],
+        "learned": [
+            "c",
+            "c++",
+            "csfml"
+        ],
+        "right": false,
+        "background": {
+            "main": "#F78232",
+            "sub": "#fbd6bd"
+        }
+    },
+    {
+        "title": "Title",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum felis vel consectetur pharetra. Fusce suscipit",
+        "github": "https://freesvg.org/search/",
+        "images": [
+            {
+                "image": "/assets/rpg/photo1.jpg"
+            },
+            {
+                "image": "/assets/rpg/photo2.jpg"
             }
         ],
         "learned": [
@@ -24,8 +47,8 @@
         ],
         "right": true,
         "background": {
-            "main": "#F78232",
-            "sub": "#fbd6bd"
+            "main": "#2de35e",
+            "sub": "#57615a"
         }
     }]
 }

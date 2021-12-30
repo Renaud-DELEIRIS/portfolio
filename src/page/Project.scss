@@ -54,7 +54,18 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        max-width: 40%;
+        width: 35%;
+        height: 40%;
+        .learned {
+            font-family: Roboto Mono, monospace;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 30px;
+            ul {
+                margin-left: 40px;
+            }
+        }
     }
 }
 

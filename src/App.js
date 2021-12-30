@@ -81,8 +81,8 @@ function App() {
             </div>
           </div>
         </div>
-        {Projects.data.map(elem => {
-          return (<Project data={elem} key={elem.title}/>)
+        {Projects.data.map((elem, index) => {
+          return (<Project data={elem} key={elem.title} index={index}/>)
         })}
       </ReactPageScroller>
     </div>
