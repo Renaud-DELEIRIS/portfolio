@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Yellowtail&display=swap');
+
+.frontPage {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  .content {
+    width: 100%;
+    height: 100%;
+    .container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+
+.blackback {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #050505;
+  border: 1px solid #312020;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: -2;
+  .background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(215deg, rgba(239, 242, 249, 0.25) 0%, rgba(1, 69, 242, 0.25) 100%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  .header {
+    padding: 61px 5% 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      font-family: Roboto Mono, monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 46px;
+      position: relative;
+      color: #FFFFFF;
+    }
+    .logo {
+      pointer-events: none;
+    }
+  }
+}
+
+header a::after {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 1.3px;
+  background: #FFFFFF;
+  transition: 300ms;
+}
+
+header a:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 91px;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    .hello {
+      display: flex;
+      font-family: Roboto Mono, monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 46px;
+      color: #FFFFFF;
+      @media (max-width: 750px) {
+        justify-content: center;
+      }
+    }
+    .sign {
+      display: flex;
+      font-family: Yellowtail;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 68px;
+      color: #FFFFFF;
+      @media (max-width: 750px) {
+        justify-content: center;
+        font-size: 40px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    width: 200px;
+    .competence {
+      display: flex;
+      width: 150px;
+      font-family: Roboto Mono, monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 46px;
+    
+      color: #FFFFFF;
+    }
+  }
+}
+
+.ressource {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  background: rgba(32, 104, 238, 0.37);
+  width: 253px;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  .icon {
+    cursor: pointer;
+    transition: 0.5s
+  }
+  .icon:hover {
+    transform: scale(1.2);
+  }
+}
+
+footer {
+  @media (max-width: 650px) {
+      display: none
+  }
+  width: 100%;
+  position: fixed;
+  .footer {
+    display: flex;
+    justify-content: center;
+    animation: UpDown 2500ms infinite alternate;
+  }
+}
+
+/* @media (max-width: 650px) {
+  .background img {
+    display: none
+  }
+} */
+
+.background img {
+  position: absolute;
+  transition: 300ms;
+  @media (max-width: 750px) {
+    transform: scale(0.6);
+  }
+}
+
+.background :nth-child(1) {
+  width: 150px;
+  height: 123px;
+  left: 65%;
+  top: 15%;
+  @media (max-width: 750px) {
+    left: 60%;
+    top: 15%
+  }
+}
+
+.background :nth-child(2) {
+  width: 243px;
+  height: 212px;
+  left: 58%;
+  top: 70%;
+  @media (max-width: 750px) {
+    left: 35%;
+    top: 65%
+  }
+}
+
+.background :nth-child(3) {
+  width: 233px;
+  height: 210px;
+  left: 20%;
+  top: 62%;
+  @media (max-width: 750px) {
+    left: -2%;
+    top: 70%
+  }  
+}
+
+.background :nth-child(4) {
+  width: 155px;
+  height: 117px;
+  left: 10%;
+  top: 22%;
+}
+
+@keyframes UpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}

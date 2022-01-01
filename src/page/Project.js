@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import Footer from '../Footer'
+import Footer from '../components/Footer'
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
 import './Project.scss'
@@ -16,7 +16,7 @@ const Project = (props) => {
     }
 
     return (
-        <div className='project' style={{background: `linear-gradient(${right ? '290' : '110'}deg, ${background.sub} -19.51%, ${background.main} 66.42%`, flexDirection: right ? "row-reverse" : "row"}}>
+        <div className={'project ' + (right ? 'row-reverse' : 'row')} style={{background: `linear-gradient(${right ? '290' : '110'}deg, ${background.sub} -19.51%, ${background.main} 66.42%`}}>
             <Fade top>
                 <div className='information'>
                     <span className='title'>{title}</span>

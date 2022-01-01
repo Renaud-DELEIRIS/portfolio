@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&family=Yellowtail&display=swap');
 
+.row {
+    flex-direction: row;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 .project {
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row-reverse;
+    @media (max-width: 750px) {
+        flex-direction: column;
+    }
     .information {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        max-width: 40%;
+        font-size: 35px;
+        width: 40%;
+        @media (max-width: 750px) {
+            font-size: 20px;
+            width: 80%;
+        }
         .title {
             font-family: Roboto Mono, monospace;
             font-style: normal;
@@ -20,15 +34,21 @@
             font-size: 50px;
             line-height: 66px;
             margin-bottom: 31px;
+            @media (max-width: 750px) {
+                font-size: 35px;
+                line-height: 40px;
+            }
         }
         .description {
             font-family: Roboto Mono, monospace;
             font-style: normal;
             font-weight: normal;
-            font-size: 35px;
             line-height: 46px;
-            margin-bottom: 70px;
+            margin-bottom: 40px;
             text-align: justify;
+            @media (max-width: 750px) {
+                line-height: 30px;
+            }
         }
         .github {
             display: flex;
@@ -37,16 +57,19 @@
             width: max-content;
             border-radius: 10px;
             padding: 5px;
+            cursor: pointer;
             .text {
                 flex-direction: row;
                 align-items: center;
                 font-family: Raleway;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 35px;
                 line-height: 41px;
                 color: #FFFFFF;
             }
+        }
+        .github:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
     }
     .inside {
@@ -54,9 +77,14 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 35%;
-        height: 40%;
+        width: 40%;
+        @media (max-width: 750px) {
+            width: 80%
+        }
         .learned {
+            @media (max-width: 750px) {
+                display: none;
+            }
             font-family: Roboto Mono, monospace;
             font-style: normal;
             font-weight: normal;

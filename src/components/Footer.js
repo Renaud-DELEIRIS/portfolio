@@ -1,5 +1,5 @@
 import React from 'react'
-import scroll from './scroll.svg'
+import scroll from '../scroll.svg'
 
 const Footer = (props) => {
     const {height} = props
