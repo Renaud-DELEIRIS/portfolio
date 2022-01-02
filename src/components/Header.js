@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from '../logo.svg';
 
 const Header = ({children}) => {
     return (
       <header>
         <div className='header'>
-          <img alt='logo' src={logo} className='logo'/>
+          <img alt='logo' src={"/assets/logo.svg"} className='logo'/>
           {children}
         </div>
       </header>

@@ -1,12 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import github from '../github.svg'
-import linkedin from '../linkedin.svg'
-import purplePolygon from '../purplePolygon.png'
-import whiteCube from '../whiteCube.png'
-import blackCube from '../blackCube.png'
-import whiteTic from '../whiteTic.png'
 import { Typewriter } from 'react-simple-typewriter'
 
 const Front = ({changePage, maxPage}) => {
@@ -43,17 +37,17 @@ const Front = ({changePage, maxPage}) => {
                   </div>
                 </div>
                 <div className='navigation'>
-                  <img alt='github' src={github} className='icon' onClick={() => {redirect("https://github.com/Renaud-DELEIRIS")}}/>
-                  <img alt='linkedin' src={linkedin} className='icon' onClick={() => {redirect("https://www.linkedin.com/in/renaud-de-leiris-505a621b3/")}}/>
+                  <img alt='github' src={"/assets/github.svg"} className='icon' onClick={() => {redirect("https://github.com/Renaud-DELEIRIS")}}/>
+                  <img alt='linkedin' src={"/assets/linkedin.svg"} className='icon' onClick={() => {redirect("https://www.linkedin.com/in/renaud-de-leiris-505a621b3/")}}/>
                 </div>
               </div>
             </div>
             <div className='blackback'>
               <div className='background'>
-                <img alt="purplepolygon" src={purplePolygon}/>
-                <img alt="whiteCube" src={whiteCube}/>
-                <img alt="blackCube" src={blackCube}/>
-                <img alt="whiteTic" src={whiteTic}/>
+                <img alt="purplepolygon" src="/assets/purplePolygon.png"/>
+                <img alt="whiteCube" src="/assets/purplePolygon.png"/>
+                <img alt="blackCube" src="/assets/blackCube.png"/>
+                <img alt="whiteTic" src="/assets/whiteTic.png"/>
               </div>
             </div>
           </div>
