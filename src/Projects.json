@@ -1,26 +1,29 @@
 {
     "data": [{
-        "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum felis vel consectetur pharetra. Fusce suscipit",
-        "github": "https://freesvg.org/search/",
+        "title": "My_RPG",
+        "description": "The goal was simple: create your own RPG in C using SFML graphic library. It was the biggest project in first year and we had a month with my 3 classmates to do it.",
+        "github": "https://github.com/Renaud-DELEIRIS/RPG",
         "images": [
             {
-                "image": "/assets/rpg/photo3.png"
+                "image": "/assets/rpg/attack_melee.png"
             },
             {
-                "image": "/assets/rpg/photo4.png"
+                "image": "/assets/rpg/fireball.png"
             },
             {
-                "image": "/assets/rpg/photo1.jpg"
+                "image": "/assets/rpg/minimap.png"
             },
             {
-                "image": "/assets/rpg/photo2.jpg"
+                "image": "/assets/rpg/Inventroy.png"
+            },
+            {
+                "image": "/assets/rpg/skilltree.png"
             }
         ],
         "learned": [
             "c",
-            "c++",
-            "csfml"
+            "csfml",
+            "Game Engine"
         ],
         "right": false,
         "background": {
@@ -29,9 +32,9 @@
         }
     },
     {
-        "title": "Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum felis vel consectetur pharetra. Fusce suscipit",
-        "github": "https://freesvg.org/search/",
+        "title": "Dashboard",
+        "description": "The purpose of this project was to familiarize with software platform node.js through the creation of a dashboard. To do this, you need to implement a web application that works like Netvibes.",
+        "github": "https://github.com/Renaud-DELEIRIS/dashboard",
         "images": [
             {
                 "image": "/assets/rpg/photo1.jpg"
@@ -41,14 +44,75 @@
             }
         ],
         "learned": [
-            "c",
-            "c++",
-            "csfml"
+            "User Management",
+            "Authentification / Identification",
+            "Timer",
+            "Service and Widget",
+            "React JS",
+            "Express js / node"
         ],
         "right": true,
         "background": {
             "main": "#2de35e",
             "sub": "#57615a"
+        }
+    },
+    {
+        "title": "Reditech",
+        "description": "For this project, you are asked to create an application (mobile or desktop) using the Reddit API. We are asked to offer a a high-quality, polished UX (User Experience) and UI (User Interface) while respecting the choosen framework best pratices",
+        "github": "https://github.com/Renaud-DELEIRIS/Reditech",
+        "images": [
+            {
+                "image": "/assets/rpg/attack_melee.png"
+            },
+            {
+                "image": "/assets/rpg/fireball.png"
+            },
+            {
+                "image": "/assets/rpg/minimap.png"
+            },
+            {
+                "image": "/assets/rpg/Inventroy.png"
+            },
+            {
+                "image": "/assets/rpg/skilltree.png"
+            }
+        ],
+        "learned": [
+            "OAuth2 protocol",
+            "UX/UI design",
+            "React Native"
+        ],
+        "right": false,
+        "background": {
+            "main": "#9718f2",
+            "sub": "#d8b6f0"
+        }
+    },
+    {
+        "title": "Babel",
+        "description": "The Babel project aims to create an SIP-like Voice Over IP (VOIP) protocol. It MUST be usable over the Internet. The project MUST be OS independent. It has to compile and run in a similar manner on Unix system and Windows systems",
+        "github": "https://github.com/Renaud-DELEIRIS/Babel",
+        "images": [
+            {
+                "image": "/assets/rpg/photo1.jpg"
+            },
+            {
+                "image": "/assets/rpg/photo2.jpg"
+            }
+        ],
+        "learned": [
+            "OS independance",
+            "CMake",
+            "Conan",
+            "PortAudio / Opus (sound lib)",
+            "TCP / UDP server",
+            "Qt client GUI"
+        ],
+        "right": true,
+        "background": {
+            "main": "#3ae8d4",
+            "sub": "#baf5ee"
         }
     }]
 }
