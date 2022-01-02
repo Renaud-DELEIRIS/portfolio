@@ -9,7 +9,7 @@ import blackCube from '../blackCube.png'
 import whiteTic from '../whiteTic.png'
 import { Typewriter } from 'react-simple-typewriter'
 
-const Front = () => {
+const Front = ({changePage, maxPage}) => {
     const redirect = (url) => {
         window.open(url, "_blank")
       }
@@ -18,7 +18,7 @@ const Front = () => {
         <div className='frontPage'>
           <div className='content'>
             <Header>
-              <a href='#contact'>CONTACT</a>
+              <a onClick={() => changePage(maxPage)}>CONTACT</a>
             </Header>
             <Footer height={'50px'}/>
             <div className='container'>

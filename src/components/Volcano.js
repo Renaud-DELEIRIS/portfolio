@@ -15,7 +15,7 @@ const Volcano = () => {
     const HearthGenerator = () => {
         const res = []
         for (var i = 0; i < maxHearth; i++)
-            res.push(<Hearth index={i}/>)
+            res.push(<Hearth key={i} index={i}/>)
         return res;
     }
 

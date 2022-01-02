@@ -19,11 +19,11 @@ function App() {
           pageOnChange={handlePageChange}
           customPageNumber={page}
         >
-        <Front/>
+        <Front changePage={handlePageChange} maxPage={Projects.data.length + 1}/>
         {Projects.data.map((elem, index) => {
           return (<Project data={elem} key={elem.title} index={index}/>)
         })}
-        <Contact/>
+        <Contact changePage={handlePageChange}/>
       </ReactPageScroller>
     </div>
   );

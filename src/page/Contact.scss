@@ -12,11 +12,41 @@
         width: 100%;
         .information {
             display: flex;
+            flex-direction: column;
             justify-content: flex-start;
+            width: 50%;
+            .title {
+                font-family: Roboto Mono;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 50px;
+                line-height: 66px;
+                color: white;
+                @media (max-width: 750px) {
+                    font-size: 40px;
+                }
+            }
+            ul {
+                list-style: none;
+                li {
+                    font-family: Roboto Mono;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 25px;
+                    line-height: 33px;
+                    color: white;
+                    @media (max-width: 750px) {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
         .right {
+            @media (max-width: 750px) {
+                display: none;
+            }
             display: flex;
-            width: 40%;
+            width: 30%;
             height: 100%;
             justify-content: center;
             flex-direction: column;
