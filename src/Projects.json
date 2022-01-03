@@ -35,12 +35,16 @@
         "title": "Dashboard",
         "description": "The purpose of this project was to familiarize with software platform node.js through the creation of a dashboard. To do this, you need to implement a web application that works like Netvibes.",
         "github": "https://github.com/Renaud-DELEIRIS/dashboard",
+        "tryit": "https://dashboard.renauddeleiris.me",
         "images": [
             {
-                "image": "/assets/rpg/photo1.jpg"
+                "image": "/assets/dashboard/home.png"
             },
             {
-                "image": "/assets/rpg/photo2.jpg"
+                "image": "/assets/dashboard/signin.png"
+            },
+            {
+                "image": "/assets/dashboard/signup.png"
             }
         ],
         "learned": [
@@ -59,7 +63,7 @@
     },
     {
         "title": "Reditech",
-        "description": "For this project, you are asked to create an application (mobile or desktop) using the Reddit API. We are asked to offer a a high-quality, polished UX (User Experience) and UI (User Interface) while respecting the choosen framework best pratices",
+        "description": "For this project, you are asked to create an application (mobile or desktop) using the Reddit API. We are asked to offer a a high-quality, polished UX and UI",
         "github": "https://github.com/Renaud-DELEIRIS/Reditech",
         "images": [
             {

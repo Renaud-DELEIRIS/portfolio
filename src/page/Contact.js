@@ -47,18 +47,18 @@ const Contact = ({changePage}) => {
                     <div className='title'>
                         Me contacter:
                     </div>
-                    <ul>
+                    <ul className='fa-ul'>
                         <li>
-                            <FontAwesomeIcon icon={faMapMarkedAlt}/> &nbsp; Adresse: 54 avenue Marc Sangnier Villeurbanne 69100 France
+                            <FontAwesomeIcon icon={faMapMarkedAlt} listItem/>Adresse: 54 avenue Marc Sangnier Villeurbanne 69100 France
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faMobileAlt}/> &nbsp; Téléphone: +33 6 67 10 60 44
+                            <FontAwesomeIcon icon={faMobileAlt} listItem/>Téléphone: +33 6 67 10 60 44
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faEnvelope}/> &nbsp; Email: renaud.de-leiris@epitech.eu
+                            <FontAwesomeIcon icon={faEnvelope} listItem/>Email: renaud.de-leiris@epitech.eu
                         </li>
                         <li>
-                            <FontAwesomeIcon icon={faGraduationCap}/> &nbsp; École: Epitech Lyon
+                            <FontAwesomeIcon icon={faGraduationCap} listItem/>École: Epitech Lyon
                         </li>
                     </ul>
                 </div>

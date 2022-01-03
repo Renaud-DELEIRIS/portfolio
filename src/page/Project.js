@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faForward } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import Fade from 'react-reveal/Fade';
 import Rotate from 'react-reveal/Rotate';
@@ -9,7 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 const Project = (props) => {
-    const {background, title, description, github, images, learned, right} = props.data;
+    const {background, title, description, github, images, learned, right, tryit} = props.data;
 
     const redirect = (url) => {
         window.open(url, "_blank")
@@ -22,8 +23,13 @@ const Project = (props) => {
                     <span className='title'>{title}</span>
                     <span className='description'>{description}</span>
                     <div className='github' style={{background: background.main}} onClick={() => {redirect(github)}}>
-                        <span className='text'>voir sur github &nbsp;<FontAwesomeIcon icon={faGithub}/></span>
+                        <span className='text'>github repository &nbsp;<FontAwesomeIcon icon={faGithub}/></span>
                     </div>
+                    {tryit &&
+                    <div className='github' style={{background: background.main}} onClick={() => {redirect(tryit)}}>
+                        <span className='text'>try it now &nbsp;<FontAwesomeIcon icon={faForward}/></span>
+                    </div>
+                    }
                 </div>
             </Fade>
             <Rotate top left={right ? true : false} right={right ? false : true}>
@@ -38,7 +44,7 @@ const Project = (props) => {
                     })}
                     </Carousel>
                     <div className='learned'>
-                        Ce que j'ai appris
+                        What I have learned:
                         <ul>
                             {learned.map((elem, key) => {
                                 return(

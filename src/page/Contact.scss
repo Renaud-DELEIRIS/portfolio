@@ -15,28 +15,36 @@
             flex-direction: column;
             justify-content: flex-start;
             width: 50%;
+            @media (max-width: 750px) {
+                width: 90%
+            }
             .title {
                 font-family: Roboto Mono;
                 font-style: normal;
                 font-weight: normal;
-                font-size: 50px;
+                font-size: 45px;
                 line-height: 66px;
                 color: white;
                 @media (max-width: 750px) {
-                    font-size: 40px;
+                    font-size: 30px;
                 }
             }
             ul {
                 list-style: none;
+                padding-inline-start: 20px;
+                display: inline-block;
+                vertical-align: baseline;
                 li {
                     font-family: Roboto Mono;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 25px;
-                    line-height: 33px;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
                     color: white;
                     @media (max-width: 750px) {
-                        font-size: 20px;
+                        font-size: 13px;
+                        line-height: 13px;
                     }
                 }
             }
