@@ -67,19 +67,10 @@
         "github": "https://github.com/Renaud-DELEIRIS/Reditech",
         "images": [
             {
-                "image": "/assets/rpg/attack_melee.png"
+                "image": "/assets/reditech/first.png"
             },
             {
-                "image": "/assets/rpg/fireball.png"
-            },
-            {
-                "image": "/assets/rpg/minimap.png"
-            },
-            {
-                "image": "/assets/rpg/Inventroy.png"
-            },
-            {
-                "image": "/assets/rpg/skilltree.png"
+                "image": "/assets/reditech/second.png"
             }
         ],
         "learned": [
@@ -99,10 +90,7 @@
         "github": "https://github.com/Renaud-DELEIRIS/Babel",
         "images": [
             {
-                "image": "/assets/rpg/photo1.jpg"
-            },
-            {
-                "image": "/assets/rpg/photo2.jpg"
+                "image": "/assets/babel/UML_GENERAL.png"
             }
         ],
         "learned": [

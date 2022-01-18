@@ -49,7 +49,7 @@ const Contact = ({changePage}) => {
                     </div>
                     <ul className='fa-ul'>
                         <li>
-                            <FontAwesomeIcon icon={faMapMarkedAlt} listItem/>Adresse: 54 avenue Marc Sangnier Villeurbanne 69100 France
+                            <FontAwesomeIcon icon={faMapMarkedAlt} listItem/>Adresse: 2 Rue du Professeur Charles Appleton, 69007 Lyon
                         </li>
                         <li>
                             <FontAwesomeIcon icon={faMobileAlt} listItem/>Téléphone: +33 6 67 10 60 44
